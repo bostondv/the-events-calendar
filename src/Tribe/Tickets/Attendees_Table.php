@@ -81,7 +81,7 @@ class Tribe__Events__Tickets__Attendees_Table extends WP_List_Table {
 			'check_in'        => esc_html__( 'Check in', 'the-events-calendar' ),
 		);
 
-		return $columns;
+		return apply_filters( 'tribe_events_tickets_attendees_get_columns', $columns );
 	}
 
 
